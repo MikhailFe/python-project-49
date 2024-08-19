@@ -3,19 +3,23 @@ name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["Mikhail Fedorov <mfedorovqwe@yandex.ru>"]
+readme = "README.md"
+packages = [
+    { include = "brain_games" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+py-make = "^0.1.2"
+prompt = "^0.4.1"
+asciinema = "^2.4.0"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^7.1.0"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-packages = [
-  { include = "brain_games" },
-]
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
