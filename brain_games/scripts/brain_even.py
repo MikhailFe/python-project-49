@@ -13,7 +13,7 @@ def is_nimber_even():
 
     while counter_answer <= 2:
         random_number = random.randint(1, 100)
-        print('Question: ', random_number)
+        print('Question:', random_number)
         answer = prompt.string('Your answer: ')
 
         if (answer == 'yes' and random_number % 2 == 0) or \
