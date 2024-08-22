@@ -2,20 +2,18 @@ import prompt
 import random
 
 
-def welcome_user():
-    name = prompt.string('May I have your name? ')
-    return name
 
-
-def is_nimber_even(name):
+def is_nimber_even():
     "Функция, котороя проверяет является ли чсило четным"
-
+    
+    print("Welcome to the Brain Games!")
+    name = prompt.string('May I have your name? ')
     print('Answer "yes" if the number is even, otherwise answer "no".')
     counter_answer = 0
 
     while counter_answer <= 2:
         random_number = random.randint(1, 100)
-        print('Question: ', {random_number})
+        print('Question: ', random_number)
         answer = prompt.string('Your answer: ')
 
         if (answer == 'yes' and random_number % 2 == 0) or \
@@ -31,9 +29,7 @@ def is_nimber_even(name):
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = welcome_user()
-    is_nimber_even(name)
+    is_nimber_even()
 
 
 if __name__ == "__main__":
