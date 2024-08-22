@@ -37,7 +37,7 @@ def calc_games():
                 counter_answer = counter_answer + 1
                 print('Correct!')
         if answer != result:
-            print(f"'{result}' is wrong answer ;(. Correct answer was '{answer}'")
+            print(f"'{result}' is wrong answer ;(. Correct answer was '{answer}'.")
             print("Let's try again,", name + '!')
             break
     else:
