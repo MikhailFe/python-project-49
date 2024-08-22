@@ -2,10 +2,10 @@ import random
 
 
 def generate_arithmetic_progression():
-    a1 = random.randint(0, 10)
+    a = random.randint(0, 10)
     d = random.randint(0, 10)
     n = random.randint(5, 15)
-    return [a1 + i * d for i in range(n)]
+    return [a + i * d for i in range(n)]
 
 
 def arithmetic_progression_game():
@@ -33,7 +33,6 @@ def arithmetic_progression_game():
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{remove_value}'.")
             print(f"Let's try again, {user_name}!")
-
             break
     else:
         print(f'Congratulations, {user_name}!')
