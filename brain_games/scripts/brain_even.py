@@ -26,7 +26,7 @@ def is_nimber_even():
             print(f"Let's try again, {name}!")
             break
     else:
-        print(f'Congratulations, {name}!')
+        print(f'Congratulations, {name}')
 
 
 def main():
