@@ -41,7 +41,7 @@ def calc_games():
             print("Let's try again,", name + '!')
             break
     else:
-        print('Congratulations,', name)
+        print('Congratulations,', name + "!")
 
 
 def main():
