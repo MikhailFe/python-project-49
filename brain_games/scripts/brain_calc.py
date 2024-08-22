@@ -17,6 +17,7 @@ def calc_games():
     while counter_answer <= 2:
         first_number = random.randint(1, 100)
         second_number = random.randint(1, 100)
+        result = 0
 
         print('Question:', first_number, random_signs, second_number)
         answer = int(prompt.string('Your answer: '))
@@ -36,7 +37,7 @@ def calc_games():
                 counter_answer = counter_answer + 1
                 print('Correct!')
         if answer != result:
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+            print(f"'{result}' is wrong answer ;(. Correct answer was '{answer}'")
             print("Let's try again,", name + '!')
             break
     else:
