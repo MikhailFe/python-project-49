@@ -3,7 +3,7 @@ import random
 
 def generate_arithmetic_progression():
     """Генерация случайного списка."""
-    
+
     a = random.randint(0, 10)
     d = random.randint(0, 10)
     n = random.randint(5, 15)
