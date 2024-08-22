@@ -6,7 +6,7 @@ def generate_arithmetic_progression():
 
     a1 = random.randint(0, 10)
     d = random.randint(0, 10)
-    n = 10
+    n = random.randint(5, 15)
     return [a1 + i * d for i in range(n)]
 
 
