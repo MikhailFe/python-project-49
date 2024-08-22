@@ -21,12 +21,12 @@ def arithmetic_progression_game():
 
     while counter_answer <= 2:
         sequence = generate_arithmetic_progression()
-        new_value = '...'
+        new_value = '..'
         remove_value = random.choice(sequence)
         index = sequence.index(remove_value)
         sequence.pop(index)
         sequence.insert(index, new_value)
-        line = ', '.join(map(str, sequence))
+        line = ' '.join(map(str, sequence))
         print('Question:', line)
         answer = int(input("Your answer: "))
         if answer == remove_value:
