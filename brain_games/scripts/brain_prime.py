@@ -27,8 +27,11 @@ def prime_games():
         if is_prime(n) and answer == 'yes':
             print('Correct!')
             counter_answer = counter_answer + 1
+        elif not is_prime(n) and answer == 'no':
+            print('Correct!')
+            counter_answer = counter_answer + 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{n}'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
             print(f"Let's try again, {user_name}!")
             break
     else:
