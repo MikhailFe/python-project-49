@@ -1,7 +1,7 @@
 import random
 
 
-def generate_arithmetic_progression():
+def generate_progression():
     """Генерация случайного списка."""
 
     a = random.randint(0, 10)
@@ -20,7 +20,7 @@ def arithmetic_progression_game():
     counter_answer = 0
 
     while counter_answer <= 2:
-        sequence = generate_arithmetic_progression()
+        sequence = generate_progression()
         new_value = '..'
         remove_value = random.choice(sequence)
         index = sequence.index(remove_value)
@@ -41,7 +41,7 @@ def arithmetic_progression_game():
 
 
 def main():
-    arithmetic_progression_game()
+    generate_progression()
 
 
 if __name__ == "__main__":
