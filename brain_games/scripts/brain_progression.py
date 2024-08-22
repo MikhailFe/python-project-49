@@ -2,8 +2,6 @@ import random
 
 
 def generate_arithmetic_progression():
-    """Генерирует арифметическую последовательность."""
-
     a1 = random.randint(0, 10)
     d = random.randint(0, 10)
     n = random.randint(5, 15)
