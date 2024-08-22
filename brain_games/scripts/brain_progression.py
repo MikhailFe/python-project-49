@@ -13,10 +13,10 @@ def generate_progression():
 def arithmetic_progression_game():
     """Логика арифметической последовательности."""
 
-    print("Welcome to the Brain Games!")
+    # print("Welcome to the Brain Games!")
     user_name = input("May I have your name? ")
     print(f"Hello, {user_name}!")
-    print('What number is missing in the progression?')
+    # print('What number is missing in the progression?')
     counter_answer = 0
 
     while counter_answer <= 2:
@@ -30,7 +30,7 @@ def arithmetic_progression_game():
         print('Question:', line)
         answer = int(input("Your answer: "))
         if answer == remove_value:
-            print('Correct!')
+            # print('Correct!')
             counter_answer = counter_answer + 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{remove_value}'.")
