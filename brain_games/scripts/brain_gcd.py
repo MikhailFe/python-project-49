@@ -20,7 +20,8 @@ def gcd_game():
             print("Correct!")
             score += 1
         else:
-            print(f"Sorry, {user_name}. The correct answer was {correct_answer}.")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print("Let's try again,", user_answer + '!')
             break
 
     if score == 3:

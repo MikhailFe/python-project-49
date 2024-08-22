@@ -28,8 +28,8 @@ def prime_games():
             print('Correct!')
             counter_answer = counter_answer + 1
         else:
-            print(f"Sorry, {user_name}. The correct answer was no.")
-            print(f"Let's try again, {user_name} ! ")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{n}'.")
+            print(f"Let's try again, {user_name}!")
             break
     else:
         print(f'Congratulations, {user_name}!')
